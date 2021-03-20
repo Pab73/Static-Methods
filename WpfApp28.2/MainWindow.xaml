@@ -5,24 +5,56 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp28._2"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="300" Width="550" Foreground="White" Background="LightSteelBlue">
     <StackPanel>
-        <Label Margin="10" Content="Controleren op schrikkeljaar"/>
+        <Label Margin="10" Content="Controleren op schrikkeljaar" FontFamily="Rockwell Nova Extra Bold">
+            <Label.Effect>
+                <DropShadowEffect Color="#FF0046FF" ShadowDepth="10" Opacity="0.75"/>
+            </Label.Effect>
+        </Label>
         <StackPanel Orientation="Horizontal" >
-            <TextBox Margin="10" Width="200" Name="txtSchrikkeljaar"/>
-            <Button Margin="10" Width="200" Name="btnSchrikkeljaar" Content="Schrikkeljaar?" Click="btnSchrikkeljaar_Click"/>
-            <Label Margin="10" Name="lblBoolean"/>
+            <TextBox Margin="10" Width="200" Name="txtSchrikkeljaar" FontWeight="Bold">
+                <TextBox.Effect>
+                    <DropShadowEffect Color="#FF799DFF" ShadowDepth="10" Opacity="0.75"/>
+                </TextBox.Effect>
+            </TextBox>
+            <Button  Cursor="Hand" Margin="10" Width="200" Name="btnSchrikkeljaar" Content="Schrikkeljaar?" Click="btnSchrikkeljaar_Click" FontWeight="Bold">
+                <Button.Effect>
+                    <DropShadowEffect Color="#FF799DFF" ShadowDepth="10" Opacity="0.75"/>
+                </Button.Effect>
+            </Button>
+            <Label Margin="10" Name="lblBoolean" FontWeight="Bold"/>
         </StackPanel>
         <StackPanel Orientation="Horizontal" >
-            <TextBox Margin="10" Width="200" Name="txtConversie"/>
-            <Button Margin="10" Width="200" Name="btnConversie" Content="Conversie naar €/BEF" Click="btnConversie_Click" />
-            <Label Margin="10" Name="lblConversie"/>
+            <TextBox Margin="10" Width="200" Name="txtConversie" FontWeight="Bold">
+                <TextBox.Effect>
+                    <DropShadowEffect Color="#FF799DFF" ShadowDepth="10" Opacity="0.75"/>
+                </TextBox.Effect>
+            </TextBox>
+            <Button Cursor="Hand" Margin="10" Width="200" Name="btnConversie" Content="Conversie naar €/BEF" Click="btnConversie_Click" FontWeight="Bold" >
+                <Button.Effect>
+                    <DropShadowEffect Color="#FF799DFF" ShadowDepth="10" Opacity="0.75"/>
+                </Button.Effect>
+            </Button>
+            <Label Margin="10" Name="lblConversie" FontWeight="Bold"/>
         </StackPanel>
-        <Label Margin="10" Content="Controle op RRnr"/>
+        <Label Margin="10" Content="Controle op RRnr" FontFamily="Rockwell Nova Extra Bold">
+            <Label.Effect>
+                <DropShadowEffect Color="#FF0046FF" ShadowDepth="10"/>
+            </Label.Effect>
+        </Label>
         <StackPanel Orientation="Horizontal" >
-            <PasswordBox Margin="10" Width="200" ToolTip="Rijksregisternummer" PasswordChar="#" Name="txtRRnr"/>
-            <Button Margin="10" Width="200" Name="btnControle" Content="Controle op Rrnr" Click="btnControle_Click" />
-            <Label Margin="10" Name="lblControle"/>
+            <PasswordBox Margin="10" Width="200" ToolTip="Rijksregisternummer" PasswordChar="#" Name="txtRRnr" FontWeight="Bold">
+                <PasswordBox.Effect>
+                    <DropShadowEffect Color="#FF799DFF" ShadowDepth="10" Opacity="0.75"/>
+                </PasswordBox.Effect>
+            </PasswordBox>
+            <Button Cursor="Hand" Margin="10" Width="200" Name="btnControle" Content="Controle op Rrnr" Click="btnControle_Click" FontWeight="Bold" >
+                <Button.Effect>
+                    <DropShadowEffect Color="#FF799DFF" ShadowDepth="10" Opacity="0.75"/>
+                </Button.Effect>
+            </Button>
+            <Label Margin="10" Name="lblControle" FontWeight="Bold"/>
         </StackPanel>
 
     </StackPanel>
