@@ -1,0 +1,29 @@
+﻿<Window x:Class="WpfApp28._2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp28._2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <StackPanel>
+        <Label Margin="10" Content="Controleren op schrikkeljaar"/>
+        <StackPanel Orientation="Horizontal" >
+            <TextBox Margin="10" Width="200" Name="txtSchrikkeljaar"/>
+            <Button Margin="10" Width="200" Name="btnSchrikkeljaar" Content="Schrikkeljaar?" Click="btnSchrikkeljaar_Click"/>
+            <Label Margin="10" Name="lblBoolean"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" >
+            <TextBox Margin="10" Width="200" Name="txtConversie"/>
+            <Button Margin="10" Width="200" Name="btnConversie" Content="Conversie naar €/BEF" Click="btnConversie_Click" />
+            <Label Margin="10" Name="lblConversie"/>
+        </StackPanel>
+        <Label Margin="10" Content="Controle op RRnr"/>
+        <StackPanel Orientation="Horizontal" >
+            <PasswordBox Margin="10" Width="200" ToolTip="Rijksregisternummer" PasswordChar="#" Name="txtRRnr"/>
+            <Button Margin="10" Width="200" Name="btnControle" Content="Controle op Rrnr" Click="btnControle_Click" />
+            <Label Margin="10" Name="lblControle"/>
+        </StackPanel>
+
+    </StackPanel>
+</Window>
